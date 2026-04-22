@@ -1,18 +1,24 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "dev": "nodemon src/app.js",
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "check": "node --check src/app.js",
+    "lab:fileops": "node scripts/fileOpsLab.js",
+    "seed:demo": "node scripts/seedDemoData.js",
+    "ensure:warden1": "node scripts/ensureSingleWarden.js",
+    "normalize:students": "node scripts/normalizeStudentNames.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Hostel Management backend API",
   "dependencies": {
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
+    "hostel-management": "file:..",
     "mongoose": "^9.2.1",
     "nodemon": "^3.1.11"
   }
